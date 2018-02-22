@@ -1,0 +1,28 @@
+---
+title: "Section7"
+author: "AMIR SEYYEDABBASI"
+date: "February 21, 2018"
+output: html_document
+---
+#7. Using the readr Package
+```{r}
+library(readr)
+teams <- read_csv("C:/Users/Amir/Desktop/R/team_standings.csv")
+```
+
+```{r}
+teams
+```
+
+```{r}
+teams <- read_csv("C:/Users/Amir/Desktop/R/team_standings.csv",col_types="cc")
+```
+ 
+ 
+```{r}
+logs <- read_csv("C:/Users/Amir/Desktop/R/team_standings.csv", n_max = 10)
+
+```
+ 
+ 
+ 

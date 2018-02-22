@@ -1,0 +1,39 @@
+---
+title: "section9"
+author: "AMIR SEYYEDABBASI"
+date: "February 21, 2018"
+output: html_document
+---
+#section9.
+```{r}
+str(file)
+```
+
+```{r}
+ ## Create a connection to 'foo.txt'
+
+con <- file("foo.txt")
+```
+
+```{r}
+## Open connection to 'foo.txt' in read-only mode
+open(con, "r")
+```
+```{r}
+## Read from the connection
+ data <- read.csv(con)
+
+```
+
+```{r}
+
+## Close the connection
+close(con)
+```
+
+which is the same as
+```{r}
+data <- read.csv("foo.txt")
+
+```
+
